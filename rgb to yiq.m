@@ -1,0 +1,14 @@
+clc;clear;
+RGB = imread('teapotdepth.jpg');
+YIQ = rgb2ntsc(RGB);
+Y=YIQ(:,:,1);
+I=YIQ(:,:,2);
+Q=YIQ(:,:,3);
+K = cat(3, Y, I, Q);
+subplot(2,2,1), subimage(Y);title('Y');
+subplot(2,2,2), subimage(I);title('I');
+subplot(2,2,3), subimage(Q);title('Q');
+subplot(2,2,4), subimage(K);title('Combined');
+figure;
+subplot(1,2,1), subimage(RGB); title('RGB');
+subplot(1,2,2), subimage(YIQ); title('YIQ');
