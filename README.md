@@ -1,2 +1,3 @@
 # Analysis-of-a-robust-edge-detection-system-in-different-color-spaces-using-color-and-depth-images
-Analysis of a robust edge detection system in different color spaces using color and depth images
+Please cite below:
+Mousavi, Seyed Muhammad Hossein, Vyacheslav Lyashenko, and Surya Prasath. "Analysis of a robust edge detection system in different color spaces using color and depth images." Компьютерная оптика 43.4 (2019).
