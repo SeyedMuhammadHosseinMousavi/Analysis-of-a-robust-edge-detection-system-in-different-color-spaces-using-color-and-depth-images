@@ -1,0 +1,14 @@
+clc;clear;
+RGB = imread('teapotdepth.jpg');
+HSV=rgb2hsv(RGB);
+H=HSV(:,:,1);
+S=HSV(:,:,2);
+V=HSV(:,:,3);
+K = cat(3, H, S, V);
+subplot(2,2,1), subimage(H);title('H');
+subplot(2,2,2), subimage(S);title('S');
+subplot(2,2,3), subimage(V);title('V');
+subplot(2,2,4), subimage(K);title('Combined');
+figure;
+subplot(1,2,1), subimage(RGB); title('RGB');
+subplot(1,2,2), subimage(HSV); title('HSV');
