@@ -1,5 +1,56 @@
 # Analysis of a robust edge detection system in different color spaces using color and depth images
 
+This repository contains the implementation of the **Analysis of a robust edge detection system in different color spaces using color and depth images** paper:
+
+## 📄 Abstract
+
+This project implements a robust edge detection pipeline using color and depth images. It employs preprocessing, Ant Colony Optimization (ACO)-based edge detection, post-processing, and evaluation using Image Quality Assessment (IQA) metrics. The pipeline supports multiple color spaces and evaluates performance under various noise conditions.
+
+## 🚀 Features
+
+```
+- Processes images in multiple color spaces: RGB, CIE Lab, YIQ, and YCbCr.
+- Applies preprocessing techniques like median filtering and unsharp masking.
+- Implements a simulated Ant Colony Optimization (ACO) algorithm for edge detection.
+- Refines edge detection with post-processing (morphological operations).
+- Evaluates results using IQA metrics such as PSNR and MSE.
+- Visualizes all intermediate steps and final results.
+```
+![image](https://github.com/user-attachments/assets/f18225b2-b1b4-4cea-8a95-2426599c2dd1)
+
+## 🖼️ Example Output
+![image](https://github.com/user-attachments/assets/aef010e1-1007-42ec-96c4-e7f2b42cebcc)
+![image](https://github.com/user-attachments/assets/fd40a0f2-5a3f-4bbb-b374-c5242818fa4b)
+
+
+
+## 📊 IQA Metrics
+
+```
+The implementation evaluates edge detection performance using:
+- Edge Based Structural Similarity (ESSIM): Evaluates structural similarity based on edge features using Sobel filters and histogram edge direction analysis.
+
+- Peak Signal-to-Noise Ratio (PSNR): Measures the ratio of signal power to noise power, indicating the preservation of edge data.
+
+- Mean Squared Error (MSE): Quantifies the cumulative squared error between the original and processed images, with smaller values indicating better quality.
+
+- Enhancement Measure (EME): Assesses image contrast improvement using block-based calculations inspired by Weber’s Law.
+
+- Edge Based Image Quality Assessment (EBIQA): Focuses on the perception of edges by comparing edge information between reference and processed images.
+
+- Non-Shift Edge Based Ratio (NSER): Measures edge agreement across images using zero-crossings and Gaussian kernels for improved accuracy.
+
+- Gradient Conduction Mean Squared Error (GCMSE): Combines pixel distances and gradients to provide a gradient-aware error evaluation.
+```
+
+## 📜 Citation
+
+```
+If you use this implementation, please cite the original paper:
+" Mousavi, Seyed Muhammad Hossein, Vyacheslav Lyashenko, and Surya Prasath. "Analysis of a robust edge detection system in different color spaces using color and depth images." Компьютерная оптика 43.4 (2019)."
+```
+![image](https://github.com/user-attachments/assets/be7c87e1-f0c5-4204-a001-23cc16eef18e)
+
 - ### Please Cite:
  Mousavi, Seyed Muhammad Hossein, Vyacheslav Lyashenko, and Surya Prasath. "Analysis of a robust edge detection system in different color spaces using color and depth images." Компьютерная оптика 43.4 (2019).
 
