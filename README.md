@@ -5,6 +5,10 @@ This repository contains the implementation of the **Analysis of a robust edge d
 ## 📄 Abstract
 
 This project implements a robust edge detection pipeline using color and depth images. It employs preprocessing, Ant Colony Optimization (ACO)-based edge detection, post-processing, and evaluation using Image Quality Assessment (IQA) metrics. The pipeline supports multiple color spaces and evaluates performance under various noise conditions.
+
+- Link to the paper:
+- https://www.computeroptics.ru/KO/PDF/KO43-4/430416.pdf
+
 - Edge detection is a very important technique for revealing significant areas in the digital image, which could aid feature extraction techniques. In fact, it is possible to remove unnecessary parts from an image using edge detection. A lot of edge detection techniques have been made already, but we propose a robust evolutionary-based system to extract the vital parts of the image. The system is based on a lot of pre- and post-processing techniques, such as filters and morphological operations, and the application of a modified Ant Colony Optimization edge detection method to the image. The main goal is to test the system on different color spaces and calculate the system’s performance. Another novel aspect of the research is using depth images along with color ones, in which depth data is acquired by Kinect V.2 in the validation part, to understand the edge detection concept better in-depth data. The system is going to be tested with ten benchmark test images for color and five images for depth format and validated using 7 Image Quality Assessment factors such as Peak Signal-to-Noise Ratio, Mean Squared Error, Structural Similarity, and more (mostly related to edges) for prove, in different color spaces and compared with other famous edge detection methods in the same condition. Also, to evaluate the robustness of the system, some types of noises such as Gaussian, salt and pepper, Poisson, and speckle are added to images to show the proposed system's power in any condition. The goal is to reach the best edges possible and to do this; more computation is needed, which increases run time computation just a bit more. But with today’s systems, this time is decreased to a minimum, which is worth it to make such a system. Acquired results are so promising and satisfactory in comparison with other methods available in the validation section of the paper. 
 
 ## 🚀 Features
@@ -54,4 +58,5 @@ If you use this implementation, please cite the original paper:
 
 - ### Please Cite:
  Mousavi, Seyed Muhammad Hossein, Vyacheslav Lyashenko, and Surya Prasath. "Analysis of a robust edge detection system in different color spaces using color and depth images." Компьютерная оптика 43.4 (2019).
-
+- Link to the paper:
+- https://www.computeroptics.ru/KO/PDF/KO43-4/430416.pdf
